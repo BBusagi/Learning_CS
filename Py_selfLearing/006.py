@@ -6,21 +6,22 @@
 
 哈希表的核心思想是使用哈希函数将键（key）映射到一个数组（或其他类型的数据结构）的特定索引。
 这个映射过程是通过哈希函数进行的，它接受一个键作为输入，并返回一个整数作为输出。这个整数就是数组的索引。
-
-这是一个修改的测试
 '''
 
 # 使用花括号
 my_dict = {'name': 'Alice', 'age': 30}
-
 # 使用 dict() 构造函数
 another_dict = dict(name='Bob', age=40)
 
-print(my_dict['name'])  # 输出 'Alice'
+# 输出
+print(my_dict['name'])
 
-my_dict['age'] = 31  # 修改现有的键值对
-my_dict['email'] = 'alice@email.com'  # 插入新的键值对
+# 修改键值对
+my_dict['age'] = 31  
+# 插入新键值对
+my_dict['email'] = 'alice@email.com'
 
+#删除键值对
 del my_dict['age']
 
 if 'name' in my_dict:
@@ -37,4 +38,3 @@ for value in my_dict.values():
 # 遍历所有的键值对
 for key, value in my_dict.items():
     print(f"Key: {key}, Value: {value}")
-
