@@ -7,3 +7,5 @@
 #004 enumerate
 
 #005 格式化字符串_f-string
+
+#006 字典_Dictionary
