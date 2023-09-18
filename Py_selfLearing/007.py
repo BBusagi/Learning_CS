@@ -24,9 +24,3 @@ print(min(squares1))
 squares2 = (x*x for x in range(10))
 print(squares2)
 print(min(squares2))
-
-'''
-惰性求值（Lazy Evaluation）是一种计算策略，用于推迟表达式的求值，直到实际需要这个值为止。
-这种方式可以提高程序的性能，并允许创建无限的数据结构。
-在惰性求值模型中，当你创建一个表达式或数据结构（例如生成器）时，计算不会立即执行。相反，每次需要一个新的值时，该值才会被计算。
-'''
