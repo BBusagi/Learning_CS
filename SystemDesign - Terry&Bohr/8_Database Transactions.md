@@ -1,5 +1,5 @@
 # Database Transactions
-+ 将相关联的数据操作做为一个整体来保证运行
++ Transactions 将相关联的数据操作做为一个整体来保证运行
 
 ### ACID 
 + Atomicity 原子性
@@ -30,4 +30,17 @@
   + 悲观锁 允许的时候将数据锁住，直到transaction完成，但是有Deadlock的问题
 
 ### 分布式Transactions
-+ 2PC 
++ 2PC 两阶段提交
+  + 先询问所有节点是否准备好
+  + 所有节点Yes，进行commit，任一回答No，全部rollback
+  + 协调者如果在二阶段前崩溃，需要人工干涉修复
++ Saga 将transaction转化为允许补偿的本地transaction
+
+### 面试重点
++ 适用场景
+  + 多步骤原子操作
+  + 添加锁来防止Lost Update
+  + 数据一致性要求较高
++ 并说明隔离等级
++ 跨服务挑战
++ 悲观锁需要提及Deadlock问题
