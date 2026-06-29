@@ -1,4 +1,5 @@
 # 
+##
 ### CPP编译 vs CSharp编译
 + C++ AOT 直接编译到原生码
   + Preprocess -> Compile -> Link
@@ -8,6 +9,13 @@
   + IL -> CLR + JIT
   + 特点 可移植IL，需要运行时，GC JIT等额外开销
 
+### R 存储单元结构
++ SSD/Disk -> RAW(Stack, Heap, Global, Code) -> Cache(L3, L2, L1) -> Register
+
+### 字节序endianness
++ 大端序 vs 小端序
+
+## Cherno CPP
 ### 95 How to REALLY learn C++
 + 学习cpp之后，去查看真实的opensource cpp项目
 + 除了教材之外，还需要真实环境和使用
@@ -32,6 +40,7 @@
 ### 8/9/12/14/15 基础语法
 + unsigned 无符号位为32位，正常为符号位+31位
 + char short int long longlong float double bool
++ bit(1/0) -> 一个16进制(4bit) -> byte(2个16进制/8bit) -> int = 4byte(32位)
 + sizeof → byte
 + pointer* reference&
 + 通过debug模式和关闭优化来通过反汇编(disassembly)查看是否存在优化方法
@@ -59,6 +68,18 @@
   + static, inline, 保持只定义一次
 
 ### 16 POINTERS in C++
++ pointer(*) 保存内存地址的数字
++ 指针不止有地址信息还有类型信息，所以需要存在不同类型，但是不重要
++ 可以通过VS的Memory工具查看
++ 通过*ptr来访问
+```cpp
+char* buffer = new char[8]; //heap中 申请8个char
+memset(buffer,0,8);         //清空原有的数据
+delete[] buffer;            //删除
+```
++ cpp中存在两种存储方式heap和stack
++ delete表示释放内存，但是heap不清空，stack会自动清空
++ `char**` - 二级指针
 
 ### 17 REFERENCES in C++
 
