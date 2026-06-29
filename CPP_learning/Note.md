@@ -82,6 +82,11 @@ delete[] buffer;            //删除
 + `char**` - 二级指针
 
 ### 17 REFERENCES in C++
++ reference是pointer的上层语法糖syntax sugar
++ reference必须初始化，并且无法修改
+
+
+
 
 #42 Object Lifetime
 #54 Stack vs Heap（经典追问）
