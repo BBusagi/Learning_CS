@@ -52,10 +52,16 @@
   + .i可以查看预处理后的文件
 + .obj为二进制不可读，但是可以转化为.asm可读文件
 
+### 7 How the C++ Linker Works
++ 连接不同的obj, lib
++ 明确是compile error还是link error
++ symbol error
+  + static, inline, 保持只定义一次
 
-#7 Linker（链接对SDK工作尤其重要）
-#16 Pointers
-#17 References（"指针 vs 引用"是经典追问）
+### 16 POINTERS in C++
+
+### 17 REFERENCES in C++
+
 #42 Object Lifetime
 #54 Stack vs Heap（经典追问）
 #38 new

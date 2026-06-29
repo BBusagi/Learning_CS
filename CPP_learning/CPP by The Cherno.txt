@@ -1,19 +1,49 @@
 学习顺序
-桶 0 · 装环境 + 快进略过（半天搞定）
+桶 0 · 装环境 + 基础概念 1.5–2倍速扫过即可
 #4（Linux）——你的 demo 和机器人都在 Linux
-基础概念 #8/9/12/14/15（变量/函数/条件/循环/控制流）用 1.5–2 倍速扫过即可，你 C# 早会了。
+#8/9/12/14/15（基础概念：变量/函数/条件/循环/控制流）
+#95 How to REALLY learn C++（学习方法论，建议最先看）
 
-桶 1 · C++ 心智模型（要认真看，这是面试和能力的核心）
-这一桶是你补 C++ 的真正目的，也是 SIE 系统层追问的命中区。约 20 集：
-#5 How C++ Works、#6 Compiler、#7 Linker（链接对 SDK 工作尤其重要）、#16 Pointers、#17 References（"指针 vs 引用"是经典追问）、#42 Object Lifetime、#54 Stack vs Heap（经典追问）、#38 new、#25/#68 Destructor/Virtual Destructor、#43 Smart Pointers（RAII 核心）、#44 Copy Constructor、#85 lvalue/rvalue、#89 Move Semantics + #90 std::move（经典追问）、#33 const、#35 Member Initializer List、#53 Templates、#46/#47/#106 vector 三连。
+桶 1 · C++ 心智模型（要认真看，这是面试和能力的核心，也是 SIE 系统层追问的命中区）约 20 集：
+#5 How C++ Works #6 Compiler、#7 Linker（链接对 SDK 工作尤其重要）
+#16 Pointers、#17 References（"指针 vs 引用"是经典追问）
+#42 Object Lifetime
+#54 Stack vs Heap（经典追问）
+#38 new
+#25/#68 Destructor/Virtual Destructor
+#43 Smart Pointers（RAII 核心）
+#44 Copy Constructor
+#85 lvalue/rvalue
+#89 Move Semantics + #90 std::move（经典追问）
+#33 const
+#35 Member Initializer List
+#53 Templates
+#46/#47/#106 vector 三连。
 
-桶 2 · demo 现做现学（搭遥操作同步时按需抽）
-你的 netcode/遥操作 demo 会用到这些，做到哪集卡了再看哪集：
-#62 Threads（server/client 循环）、#63 Timing（tick rate、延迟）、#79 std::async、#58/#59 函数指针/Lambda（回调）、#66/#67 Type Punning/Union（把数据打包成字节流上网——netcode 核心）、#96/#97 位运算（打包 + 机器人/嵌入式都要）、#100 Maps（管理连进来的客户端/对象）、#74/#81 Benchmarking（测延迟/性能）、#84 Track Memory Allocations、#49/#50/#51 库与静态/动态链接、#102 项目结构（CMake）、#110/#112 HTTP/HTTP Server（C++ 里做网络的参考）。
+桶 2 · netcode/遥操作demo（会用到这些，做到哪集卡了再看哪集）： 
+#62 Threads（server/client 循环）
+#63 Timing（tick rate、延迟）
+#79 std::async
+#58/#59 函数指针/Lambda（回调）
+#66/#67 Type Punning/Union（把数据打包成字节流上网——netcode 核心）
+#96/#97 位运算（打包 + 机器人/嵌入式都要）
+#100 Maps（管理连进来的客户端/对象）
+#74/#81 Benchmarking（测延迟/性能）
+#84 Track Memory Allocations
+#49/#50/#51 库与静态/动态链接
+#102 项目结构（CMake）
+#110/#112 HTTP/HTTP Server（C++ 里做网络的参考）。
 
 桶 3 · 面试前临门补（哪怕 demo 没用到也看）
-#26/#27/#28 继承/虚函数/接口（vtable 追问）、#69/#73 Casting、#71 Modern C++ Safety、#101 What is NULL、#21/#22 Static、#41 this。再加 #95 How to REALLY learn C++（只 8 分钟，方法论，建议最先看）。
-其余约 70 集：跳过或日后再说。结构化绑定、optional/variant/any、singleton、logging、std::expected 这些是"用到再查"的，现在看是浪费。
+#26/#27/#28 继承/虚函数/接口（vtable 追问）
+#69/#73 Casting
+#71 Modern C++ Safety
+#101 What is NULL
+#21/#22 Static
+#41 this
+
+其余约 70 集：跳过/用到再查/日后再说
+结构化绑定、optional/variant/any、singleton、logging、std::expected
 
 The Cherno 115 Class List
 1 7:05 Welcome to C++
