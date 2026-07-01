@@ -109,10 +109,18 @@ delete[] buffer;            //删除
   + [jemalloc](https://people.freebsd.org/~jasone/jemalloc/bsdcan2006/jemalloc.pdf)
 
 ### 38 The NEW Keyword in C++
-+ 返回的是一个指针
++ 五步，计算大小 -> 原始内存 -> malloc -> 构造函数 -> **返回指针**
++ new是一个运算符，并且允许重构
++ 用了之后必须删除来free
 
-#25/#68 Destructor/Virtual Destructor
-#43 Smart Pointers（RAII 核心）
+### 25/68 Destructor/Virtual Destructor
++ ~，lifertime结束的时候自动调用
++ virtual: 编译器不绑定，以运行时对象为准
+
+### 43 SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)（RAII 核心）
+
+
+
 #44 Copy Constructor
 #85 lvalue/rvalue
 #89 Move Semantics + #90 std::move（经典追问）
