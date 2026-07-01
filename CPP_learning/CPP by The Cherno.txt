@@ -5,16 +5,16 @@
 #95 How to REALLY learn C++（学习方法论，建议最先看）
 
 桶 1 · C++ 心智模型（要认真看，这是面试和能力的核心，也是 SIE 系统层追问的命中区）约 20 集：
-#5 How C++ Works #6 Compiler、#7 Linker（链接对 SDK 工作尤其重要）
-#16 Pointers、#17 References（"指针 vs 引用"是经典追问）
+#5 How C++ Works #6 Compiler、⭐#7 Linker（链接对 SDK 工作尤其重要）
+⭐#16 Pointers、⭐#17 References（"指针 vs 引用"是经典追问）
 #42 Object Lifetime
-#54 Stack vs Heap（经典追问）
+⭐#54 Stack vs Heap（经典追问）
 #38 new
-#25/#68 Destructor/Virtual Destructor
-#43 Smart Pointers（RAII 核心）
+⭐#25/#68 Destructor/Virtual Destructor
+⭐#43 Smart Pointers（RAII 核心）
 #44 Copy Constructor
 #85 lvalue/rvalue
-#89 Move Semantics + #90 std::move（经典追问）
+⭐#89 Move Semantics + #90 std::move（经典追问）
 #33 const
 #35 Member Initializer List
 #53 Templates

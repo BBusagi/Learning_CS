@@ -9,11 +9,20 @@
   + IL -> CLR + JIT
   + 特点 可移植IL，需要运行时，GC JIT等额外开销
 
-### R 存储单元结构
+### 存储单元结构
 + SSD/Disk -> RAW(Stack, Heap, Global, Code) -> Cache(L3, L2, L1) -> Register
+
+### SW的分类
++ Realtime，Interactive， Throughout， Batch Processing， Server/Backend, Embedded
 
 ### 字节序endianness
 + 大端序 vs 小端序
+
+### malloc & GC
++ 计算机科学的所有问题都能靠加一层中间层来解决——除了"中间层太多"这个问题本身
++ malloc无法做到压缩，就在于记录单位是地址而不是编号
++ GC语言可以进行GC就在于，在CLR层面上有人进行地址和编号的翻译，然后压缩
++ 现代malloc获得的就已经是虚拟地址而不是物理地址，MMU+TLB
 
 ## Cherno CPP
 ### 95 How to REALLY learn C++
@@ -84,15 +93,24 @@ delete[] buffer;            //删除
 + reference是pointer的上层语法糖syntax sugar
 + ref必须初始化，并且无法修改
 
-## 42 Object Lifetime in C++ (Stack/Scope Lifetimes)
+### 42 Object Lifetime in C++ (Stack/Scope Lifetimes)
 + cpp中存在两种lifetime,heap和stack
 + stack在结束后自动清空, heap不自动清空
 + 存在多种方法在scope外保留stack值
 + 也可以创建scope周期内的heap值
 
+### 54 Stack vs Heap Memory in C++ （经典追问）
++ 物理存放地点 RAM，最大的不同在于allocation
++ stack的分配方式是线性的，紧凑的，但是不自由
++ heap从malloc中获取满足长度的free space，是离散的，后续扩张及其消耗性能，但是自由
++ 可以通过VS的Assembly With Source Code进行查看
++ ref
+  + [dlmalloc](https://gee.cs.oswego.edu/dl/html/malloc.html)
+  + [jemalloc](https://people.freebsd.org/~jasone/jemalloc/bsdcan2006/jemalloc.pdf)
 
-#54 Stack vs Heap（经典追问）
-#38 new
+### 38 The NEW Keyword in C++
++ 返回的是一个指针
+
 #25/#68 Destructor/Virtual Destructor
 #43 Smart Pointers（RAII 核心）
 #44 Copy Constructor
