@@ -27,5 +27,11 @@
     <ClCompile Include="Lifetime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lvalue&amp;rvalue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="const.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

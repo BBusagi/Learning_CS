@@ -15,6 +15,9 @@
 ### SW的分类
 + Realtime，Interactive， Throughout， Batch Processing， Server/Backend, Embedded
 
+### . vs ->
++ `.` - 对象成员
++ `->` - 指针对象的成员 = `(*player).xxx`
 ### 字节序endianness
 + 大端序 vs 小端序
 
@@ -117,14 +120,27 @@ delete[] buffer;            //删除
 + ~，lifertime结束的时候自动调用
 + virtual: 编译器不绑定，以运行时对象为准
 
-### 43 SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)（RAII 核心）
+### 43 SMART POINTERS in C++（RAII 核心）
++ std::unique_ptr：唯一拥有
++ std::shared_ptr：多个拥有
++ std::weak_ptr：仅观察，不拥有
+
+### 44 Copying and Copy Constructors in C++
++ shallow copy vs deep copy
++ copy带有指针的类的时候，会导致二次析构
++ 通过复制构造来指定copy的具体方法
+
+### 85 lvalues and rvalues in C++
++ lvalue 长期对象, & 左值引用
++ rvalue 临时对象, && 右值引用, 常用于优化
+
+### 89 Move Semantics + #90 std::move（经典追问）
+
+### 33 CONST in C++
++ const 可以在多种位置，优先修饰左侧
++ class const后置，承诺不修改对象， multable 特例声明
 
 
-
-#44 Copy Constructor
-#85 lvalue/rvalue
-#89 Move Semantics + #90 std::move（经典追问）
-#33 const
 #35 Member Initializer List
 #53 Templates
 #46/#47/#106 vector 三连
