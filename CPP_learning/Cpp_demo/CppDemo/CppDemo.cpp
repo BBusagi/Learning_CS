@@ -3,8 +3,21 @@
 #include "RobotState.h" //only include head file
 #include <iostream>
 
+#if _DEBUG
+void Log(const char* message);
+void Log(char _char);
+
+#elif NDEBUG
+#define Log(...)
+#endif
+
+
 int main()
 {
+
+
+	Log("T");
+	Log('T');
 	std::cout << "Hello Riku" << std::endl;
 	
 	std::cout << "------Start------" << std::endl;
