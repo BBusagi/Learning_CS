@@ -2,6 +2,7 @@
 ##
 ### CPP编译 vs CSharp编译
 + C++ AOT 直接编译到原生码
+  + x64 Native Tools Command Prompt for VS 可以进行精准控制
   + Preprocess -> Compile -> Link
   > main.cpp -> Preprocessor -> 展开后的源码 -> Lexer -> Token -> Parser -> AST  -> Assembler -> Compiler -> obj -> Linker -> exe/dll
   + 特点 原生二进制 不需要运行时
@@ -114,6 +115,11 @@ delete[] buffer;            //删除
 + ref
   + [dlmalloc](https://gee.cs.oswego.edu/dl/html/malloc.html)
   + [jemalloc](https://people.freebsd.org/~jasone/jemalloc/bsdcan2006/jemalloc.pdf)
+
+### 55 Macros in C++
++ 自定义宏可分割不同环境 [vs -> preprocessor definitions]
++ 宏必须在一行内声明，或者使用\
++ 可以利用内置的宏指令，例如new的时候追踪size或者memallo
 
 ### 38 The NEW Keyword in C++
 + 五步，计算大小 -> 原始内存 -> malloc -> 构造函数 -> **返回指针**
