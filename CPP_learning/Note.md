@@ -68,10 +68,10 @@
 ### 6 How the C++ Compiler Works
 + text -> Abstract Syntax Code
 + file has no meaning,(unlike java c#)
-+ pre-processing
++ pre-processing [vs -> preprocessor to a file]
   + #include #define #if endif #pragma once
-  + .i可以查看预处理后的文件
-+ .obj为二进制不可读，但是可以转化为.asm可读文件
+  + .i 可以查看预处理后的文件
++ .obj为二进制不可读，可转为.asm可读文件 [vs -> assembler output]
 
 ### 7 How the C++ Linker Works
 + 连接不同的obj, lib
@@ -95,6 +95,10 @@ delete[] buffer;            //删除
 ### 17 REFERENCES in C++
 + reference是pointer的上层语法糖syntax sugar
 + ref必须初始化，并且无法修改
+
+### 19 CLASSES vs STRUCTS in C++
++ class 默认private
++ struct 默认public, 兼容c
 
 ### 42 Object Lifetime in C++ (Stack/Scope Lifetimes)
 + cpp中存在两种lifetime,heap和stack
@@ -130,6 +134,9 @@ delete[] buffer;            //删除
 + copy带有指针的类的时候，会导致二次析构
 + 通过复制构造来指定copy的具体方法
 
+### 60 Why I don't "using namespace std"
++ 部分库会重载关键词，导致难以区分标准库和第三方库
+
 ### 85 lvalues and rvalues in C++
 + lvalue 长期对象, & 左值引用
 + rvalue 临时对象, && 右值引用, 常用于优化
@@ -144,3 +151,4 @@ delete[] buffer;            //删除
 #35 Member Initializer List
 #53 Templates
 #46/#47/#106 vector 三连
+
