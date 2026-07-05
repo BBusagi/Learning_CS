@@ -14,19 +14,11 @@ void Log(char _char);
 
 int main()
 {
-
-
-	Log("T");
-	Log('T');
 	std::cout << "Hello Riku" << std::endl;
-	
 	std::cout << "------Start------" << std::endl;
 	{
 		RobotState a;
 	}
-	std::cout << "------End------" << std::endl << "\n";;
-
-	std::cout << "------Start------" << std::endl;
 	RobotState* b = new RobotState();
 	{
 		std::cout << sizeof(b) << std::endl; //当前为指针
@@ -35,15 +27,19 @@ int main()
 		std::cout << sizeof(b->status) << " + " << sizeof(b->tick) << std::endl;
 	}
 	std::cout << "------End------" << std::endl << "\n";;
-
+	
 	std::cout << "------Start------" << std::endl;
 	{
 		RobotState d;
 		RobotState& c = d;
 		c.tick = 111;
 		std::cout << d.tick << std::endl;
- 
+
 	}
+	std::cout << "------End------" << std::endl << "\n";;
+
+	std::cout << "------Start------" << std::endl;
+
 	std::cout << "------End------" << std::endl;
 
 	delete b;
