@@ -1,6 +1,7 @@
 # 
 
 ## Mianshi
+### C++的难点 -> 资源所有权设计（Ownership Design）
 ### cpp vs csharp
 C++ 是提前编译型语言。源码经过预处理、编译、链接，直接生成和平台绑定的原生机器码，运行时不需要任何运行时环境，直接跑在 CPU 上，没有垃圾回收。
 C# 不一样，它先编译成平台无关的中间语言 IL，运行时再由 CLR 的 JIT 把 IL 即时翻译成机器码，并提供垃圾回收、类型安全这些托管服务。
@@ -20,6 +21,9 @@ Linker解决的是"跨文件引用"的问题。编译阶段每个源文件是独
 
 ### 静态链接和动态链接的区别
 静态链接是把库的机器码直接拼进最终文件；动态链接是运行时再去加载 .dll/.so，文件更小、库能共享，但运行时要能找到那个库。
+
+### Rule of Five
+自我管理时需要5类特殊成员:Destructor, Copy Constructor, Copy Assignment, Move Constructor, Move Assignment
 
 ### 浅拷贝 vs 深拷贝 vs 移动
 浅拷贝会带来析构时候的double delete的问题，
@@ -173,7 +177,9 @@ delete[] buffer;            //删除
 + rvalue 临时对象, && 右值引用, 常用于优化
 
 ### 89/90 Move Semantics / std::move and the Move Assignment Operator in C++
-+ 当需要复制的时候
++ 移动 = 偷取所有权
++ 用std::move实现**移动构造函数**，用于新建对象
++ Move Assignment Operator - **移动赋值操作符**，用于已有对象 
 
 ### 33 CONST in C++
 + const 可以在多种位置，优先修饰左侧
@@ -183,4 +189,3 @@ delete[] buffer;            //删除
 #35 Member Initializer List
 #53 Templates
 #46/#47/#106 vector 三连
-

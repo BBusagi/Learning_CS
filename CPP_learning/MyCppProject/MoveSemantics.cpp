@@ -20,7 +20,9 @@ public:
 		memcpy(m_Data, other.m_Data, m_Size);
 	}
 
-	String(String&& other)
+	//String& operator=(const String&) // 拷贝赋值
+
+	String(String&& other) //移动构造函数
 	{
 		printf("Moved!\n");
 		m_Size = other.m_Size;
@@ -28,6 +30,24 @@ public:
 
 		other.m_Size = 0;
 		other.m_Data = nullptr;
+	}
+
+	String& operator=(String&& other) //移动赋值操作符
+	{
+		printf("Moved!\n");
+
+		if (this != &other)
+		{
+			delete[] m_Data; //避免内存泄露
+
+			m_Size = other.m_Size;
+			m_Data = other.m_Data;
+
+			other.m_Size = 0;
+			other.m_Data = nullptr;
+		}
+
+		return *this;
 	}
 
 	~String() 
@@ -80,6 +100,25 @@ int main()
 	Entity entity("Riku"); //目的是通过mian中输入，通过String类传递给目标Entity类
 	//Entity entity((String)"Riku");
 	entity.PrintName();
+	std::cout << "------------------\n";
+
+
+	String string = "Hello";
+	std::cout << "string: "; string.Print();
+	// String dest = string； //copy
+	//String dest(std::move(string)); <=> String dest = (String&&)string;//参数构造
+	
+	std::cout << "------Start------" << std::endl;
+	String dest1 = std::move(string); //调用移动函数 
+	std::cout << "string: "; string.Print();
+	std::cout << "dest1: "; dest1.Print();
+
+	String dest2;
+	std::cout << "------Start------" << std::endl;
+	dest2 = std::move(dest1); //移动赋值操作符
+	std::cout << "string: "; string.Print();
+	std::cout << "dest1: "; dest1.Print();
+	std::cout << "dest2: "; dest2.Print();
 
 	std::cin.get();
 }
