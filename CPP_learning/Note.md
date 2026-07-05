@@ -185,7 +185,9 @@ delete[] buffer;            //删除
 + const 可以在多种位置，优先修饰左侧
 + class const后置，承诺不修改对象， multable 特例声明
 
+### 35 Member Initializer Lists in C++ (Constructor Initializer List)
++ 初始化顺序需要和声明顺序保持一致
++ 成员初始化列表将会替代声明时默认初始化，避免初始化两次，保持性能高效
 
-#35 Member Initializer List
 #53 Templates
 #46/#47/#106 vector 三连
