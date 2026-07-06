@@ -192,5 +192,13 @@ delete[] buffer;            //删除
 ### 53 Templates 
 + 与c#中的泛型相似但更加强大
 + template<typename T>，也可以在调用时通过<>显式指定传参
++ 双刃剑，可用在重载，但是需要避免过度复杂
 
-#46/#47/#106 vector 三连
+### 46 The Arrow Operator
++ 指针调用方法时使用 ->
++ 允许重载
++ 可以获得内存的offset
+
+### 46/47/106 The Arrow Operator
++ 
+/# vector 三连
