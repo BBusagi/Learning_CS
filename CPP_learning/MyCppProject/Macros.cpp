@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 #if _DEBUG
 #define ENV 0
@@ -9,8 +9,8 @@
 int main()
 {
 	std::cout << "ENV" << std::endl;
-	std::cout << "ÎÄ¼þ: " << __FILE__ << " ÐÐ: " << __LINE__ << std::endl;
-	std::cout << "±àÒëÓÚ: " << __DATE__ << " " << __TIME__ << std::endl;
-	std::cout << "C++ ±ê×¼: " << __cplusplus << std::endl;
+	std::cout << "æ–‡ä»¶: " << __FILE__ << " è¡Œ: " << __LINE__ << std::endl;
+	std::cout << "ç¼–è¯‘äºŽ: " << __DATE__ << " " << __TIME__ << std::endl;
+	std::cout << "C++ æ ‡å‡†: " << __cplusplus << std::endl;
 	std::cout << "------------------" << std::endl;
 }
