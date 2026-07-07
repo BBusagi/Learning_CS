@@ -156,8 +156,8 @@ delete[] buffer;            //删除
 + 用了之后必须删除来free
 
 ### 25/68 Destructor/Virtual Destructor
-+ ~，lifertime结束的时候自动调用
-+ virtual: 编译器不绑定，以运行时对象为准
++ `~`，lifertime结束的时候自动调用
++ `virtual`: 编译器不绑定，以运行时对象为准
 
 ### 43 SMART POINTERS（RAII 核心）
 + std::unique_ptr：唯一拥有
@@ -178,11 +178,11 @@ delete[] buffer;            //删除
 
 ### 89/90 Move Semantics / std::move and the Move Assignment Operator
 + 移动 = 偷取所有权
-+ 用std::move实现**移动构造函数**，用于新建对象
++ 用`std::move`实现**移动构造函数**，用于新建对象
 + Move Assignment Operator - **移动赋值操作符**，用于已有对象 
 
 ### 33 CONST
-+ const 可以在多种位置，优先修饰左侧
++ `const` 可以在多种位置，优先修饰左侧
 + class const后置，承诺不修改对象， multable 特例声明
 
 ### 35 Member Initializer Lists (Constructor Initializer List)
@@ -191,14 +191,23 @@ delete[] buffer;            //删除
 
 ### 53 Templates 
 + 与c#中的泛型相似但更加强大
-+ template<typename T>，也可以在调用时通过<>显式指定传参
++ `template<typename T>`，也可以在调用时通过<>显式指定传参
 + 双刃剑，可用在重载，但是需要避免过度复杂
 
-### 46 The Arrow Operator
-+ 指针调用方法时使用 ->
+### 45 The Arrow Operator
++ 指针调用方法时使用 `->`
 + 允许重载
 + 可以获得内存的offset
 
-### 46/47/106 The Arrow Operator
-+ 
-/# vector 三连
+### 46/47/106 `std::vector` - Dynamic Arrays / Optimizing / Wrong using
++ 速度优化不是标准库的目标
++ vector其实是ArrayList，动态扩容，连续内存，随机访问O(1)
++ 创建vector的时候优先使用对象，然后是指针
++ `for (Type variable : Container)` -- foreach
++ 优化点
+  1. 简化从main中移动到vector中 - `.emplace_back`
+  2. 简化扩容过程，提前告知内存 - `.reserve` / `.resize`(会初始化)
++ 性能是检验标准 *内置一个mem统计工具
+  1. 能用array就不要用vector
+  2. 预先分配内存
+  3. 用移动代替复制vector
