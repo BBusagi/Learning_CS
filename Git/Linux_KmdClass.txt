@@ -1,0 +1,93 @@
+Linux:
+
+ls/dir:文件目录
+	ls -l:更多
+
+cd[space]:home dir
+cd /d [path:]:移动指令
+cd ..:返回上层
+
+who:用户查看
+which:定位指令
+logout:退出终端
+
+md/mkdir:创建文件夹
+
+mv:重命名
+
+readelf -l:显示elf类型文件
+
+sudo:管理员指令
++ shutdown now/+ cat passwd/+ cat shadow
+
+cat:连接指令(concatenate)
+
+shutdown:关机指令
+man shutdown:关机指令(菜单)
+/sbin/shutdown
+
+reboot
+
+apt-get:自动从网络中获取包
+apt-get install
+apt update
+apt upgrade
+apt install apache2
+
+wc -c:检查文件大小
+
+echo:字符串输出指令
+echo $?:输出结果
+
+nm:目标文件的符号清单
+	-g: 
+
+file:识别文件类型
+
+ldd:目标文件的所需动态库
+
+strace:追踪调用
+
+ar rcs:创建库
+
+tar:压缩包指令
+	-xpf:恢复
+
+ps awx:程序追踪
+
+·gcc [filename] -o a.out:编译cpp 
+	-o:output指令
+	-c:产生object文件
+	-static:产生静态库
+
+	-I(i的大写):头文件地址
+	-L(大写):存在的地址，库文件一般为.a或.so文件
+	-l(小写):-L之后，加库名(.a文件名)
+	-fPIC
+
+	./a.out:执行exe
+
+
+
+
+·vi:vi模式
+i:输入模式
+esc:控制模式
+	x:当前位删除
+	d:整行删除
+
+man:菜单指令
++ shutdown/ +cat/ +dash/ +apt-get
+
+more:更多指令
+
+-help:帮助指令
+
+Alt+F1/F2...:切换终端
+
+
+其他平台：
+powershell
+terminal: ls -al [CMD?]
+
+

@@ -1,0 +1,29 @@
+cd
+cd ..
+cd /.
+
+pwd
+
+dir
+ls
+ls -a
+ls -l
+
+rm
+rm -r	
+rm -f
+
+mkdir
+rmdir
+
+touch
+
+mv
+
+other:
+rest
+clear
+history
+help
+exit
+#
