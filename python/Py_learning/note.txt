@@ -1,0 +1,8 @@
+VS code:
+调出控制面板 Ctrl+Shift+P
+添加/取消 注释 Ctrl + /
+
+新建文件 New file
+打开控制台 New terminal
+
+update the submodel
