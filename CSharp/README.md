@@ -2,6 +2,12 @@
 All files for C# and Unity-related exercises 
 
 ## CSharp_learning
+C# 基础到数据结构/算法的分季练习工程：
++ `CSharp_learning_season1` — 基础语法、变量与运算
++ `CSharp_learning_season2` — 类、继承与结构
++ `CSharp_learning_season5_DataStructures` — 顺序表、链表、栈等数据结构
++ `CSharp_learning_season6_Algorithm` — 最大子数组等算法练习
++ `CSharp_learning_MyList` — 手写 List 实现
 
 ## LINQ
 + 在C#中使用类似SQL的数据处理 

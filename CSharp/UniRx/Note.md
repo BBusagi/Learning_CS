@@ -41,3 +41,7 @@ CompositeDisposable     管理多个 IDisposable 对象的资源释放
 ## 利用UniRx解决协程的弊端
 1. 返回值必须为Enumberator(为什么？)
 2. 无法使用try-catch捕捉异常
+
+## UniTask
++ TrySet 之后的返回值为任务状态（结束与否），而不是任务结果
++ UniTaskCompletionSource 可复用
