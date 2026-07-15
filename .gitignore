@@ -1,0 +1,26 @@
+# ---- .NET / C# ----
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
+
+# ---- Visual C++ 中间产物 ----
+*.i
+*.asm
+*.iobj
+*.ipdb
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- OS / 编辑器 ----
+*.lnk
+Thumbs.db
+.DS_Store
