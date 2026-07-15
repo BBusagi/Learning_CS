@@ -1,5 +1,5 @@
-# C
-All files for { c#, c++, c} exercises 
+# CSharp
+All files for C# and Unity-related exercises 
 
 ## CSharp_learning
 
