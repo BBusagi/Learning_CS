@@ -1,0 +1,9 @@
+业务CRUD vs 协议Http
+C POST
+R Get
+U Update
+D Delete
+
+# ref
++ https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-10.0&tabs=visual-studio-code
++ https://www.youtube.com/watch?v=cSnoAGHKVus&list=PL82C6-O4XrHfrGOCPmKmwTO7M0avXyQKc&index=4

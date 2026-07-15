@@ -1,0 +1,163 @@
+学习顺序
+桶 0 · 装环境 + 基础概念 1.5–2倍速扫过即可
+#4（Linux）——你的 demo 和机器人都在 Linux
+#8/9/12/14/15（基础概念：变量/函数/条件/循环/控制流）
+#95 How to REALLY learn C++（学习方法论，建议最先看）
+
+桶 1 · C++ 心智模型（要认真看，这是面试和能力的核心，也是 SIE 系统层追问的命中区）约 20 集：
+#5 How C++ Works #6 Compiler、⭐#7 Linker（链接对 SDK 工作尤其重要）
+⭐#16 Pointers、⭐#17 References（"指针 vs 引用"是经典追问）
+#42 Object Lifetime
+⭐#54 Stack vs Heap（经典追问）
+#38 new
+⭐#25/#68 Destructor/Virtual Destructor
+⭐#43 Smart Pointers（RAII 核心）
+#44 Copy Constructor
+#85 lvalue/rvalue
+⭐#89 Move Semantics + #90 std::move（经典追问）
+#33 const
+#35 Member Initializer List
+#53 Templates
+#46/#47/#106 vector 三连。
+
+桶 2 · netcode/遥操作demo（会用到这些，做到哪集卡了再看哪集）： 
+#62 Threads（server/client 循环）
+#63 Timing（tick rate、延迟）
+#79 std::async
+#58/#59 函数指针/Lambda（回调）
+#66/#67 Type Punning/Union（把数据打包成字节流上网——netcode 核心）
+#96/#97 位运算（打包 + 机器人/嵌入式都要）
+#100 Maps（管理连进来的客户端/对象）
+#74/#81 Benchmarking（测延迟/性能）
+#84 Track Memory Allocations
+#49/#50/#51 库与静态/动态链接
+#102 项目结构（CMake）
+#110/#112 HTTP/HTTP Server（C++ 里做网络的参考）。
+
+桶 3 · 面试前临门补（哪怕 demo 没用到也看）
+#26/#27/#28 继承/虚函数/接口（vtable 追问）
+#69/#73 Casting
+#71 Modern C++ Safety
+#101 What is NULL
+#21/#22 Static
+#41 this
+
+其余约 70 集：跳过/用到再查/日后再说
+结构化绑定、optional/variant/any、singleton、logging、std::expected
+
+The Cherno 115 Class List
+1 7:05 Welcome to C++
+2 8:36 How to Setup C++ on Windows
+3 3:29 How to Setup C++ on Mac
+4 8:12 How to Setup C++ on Linux
+5 20:21 How C++ Works
+6 17:55 How the C++ Compiler Works
+7 15:52 How the C++ Linker Works
+8 13:46 Variables in C++
+9 9:50 Functions in C++
+10 15:10 C++ Header Files
+11 19:20 How to DEBUG C++ in VISUAL STUDIO
+12 23:43 CONDITIONS and BRANCHES in C++ (if statements)
+13 12:08 BEST Visual Studio Setup for C++ Projects!
+14 12:20 Loops in C++ (for loops, while loops)
+15 8:20 Control Flow in C++ (continue, break, return)
+16 16:59 POINTERS in C++
+17 10:13 REFERENCES in C++
+18 8:42 CLASSES in C++
+19 8:32 CLASSES vs STRUCTS in C++
+20 11:32 How to Write a C++ Class
+21 6:29 Static in C++
+22 9:12 Static for Classes and Structs in C++
+23 7:45 ENUMS in C++
+24 6:58 Constructors in C++
+25 4:47 Destructors in C++
+26 8:00 Inheritance in C++
+27 6:45 Virtual Functions in C++
+28 6:55 Interfaces in C++ (Pure Virtual Functions)
+29 8:49 Visibility in C++
+30 18:31 Arrays in C++
+31 19:26 How Strings Work in C++ (and how to use them)
+32 14:07 String Literals in C++
+33 12:54 CONST in C++
+34 6:56 The Mutable Keyword in C++
+35 8:37 Member Initializer Lists in C++ (Constructor Initializer List)
+36 8:01 Ternary Operators in C++ (Conditional Assignment)
+37 13:03 How to CREATE/INSTANTIATE OBJECTS in C++
+38 10:53 The NEW Keyword in C++
+39 7:54 Implicit Conversion and the Explicit Keyword in C++
+40 12:44 OPERATORS and OPERATOR OVERLOADING in C++
+41 6:08 The "this" keyword in C++
+42 11:00 Object Lifetime in C++ (Stack/Scope Lifetimes)
+43 11:37 SMART POINTERS in C++ (std::unique_ptr, std::shared_ptr, std::weak_ptr)
+44 20:52 Copying and Copy Constructors in C++
+45 7:53 The Arrow Operator in C++
+46 14:14 Dynamic Arrays in C++ (std::vector)
+47 9:44 Optimizing the usage of std::vector in C++
+48 7:40 Local Static in C++
+49 18:43 Using Libraries in C++ (Static Linking)
+50 10:07 Using Dynamic Libraries in C++
+51 12:27 Making and Working with Libraries in C++ (Multiple Projects in Visual Studio)
+52 17:20 How to Deal with Multiple Return Values in C++
+53 17:58 Templates in C++
+54 19:31 Stack vs Heap Memory in C++
+55 19:36 Macros in C++
+56 17:04 The "auto" keyword in C++
+57 10:39 Static Arrays in C++ (std::array)
+58 12:41 Function Pointers in C++
+59 11:54 Lambdas in C++
+60 14:35 Why I don't "using namespace std"
+61 13:17 Namespaces in C++
+62 11:35 Threads in C++
+63 11:15 Timing in C++
+64 20:21 Multidimensional Arrays in C++ (2D arrays)
+65 6:43 Sorting in C++
+66 13:20 Type Punning in C++
+67 8:50 Unions in C++
+68 7:55 Virtual Destructors in C++
+69 13:25 Casting in C++
+70 11:08 Conditional and Action Breakpoints in C++
+71 17:52 Safety in modern C++ and how to teach it
+72 21:30 Precompiled Headers in C++
+73 13:59 Dynamic Casting in C++
+74 14:52 BENCHMARKING in C++ (how to measure performance)
+75 10:03 STRUCTURED BINDINGS in C++
+76 10:06 How to Deal with OPTIONAL Data in C++
+77 10:03 Multiple TYPES of Data in a SINGLE VARIABLE in C++?
+78 13:14 How to store ANY data in C++
+79 23:10 How to make C++ run FASTER (with std::async)
+80 15:02 How to make your STRINGS FASTER in C++!
+81 18:09 VISUAL BENCHMARKING in C++ (how to measure performance visually)
+82 19:16 SINGLETONS in C++
+83 13:14 Small String Optimization in C++
+84 13:25 Track MEMORY ALLOCATIONS the Easy Way in C++
+85 14:13 lvalues and rvalues in C++
+86 14:42 Continuous Integration in C++
+87 14:35 Static Analysis in C++
+88 11:22 Argument Evaluation Order in C++
+89 13:10 Move Semantics in C++
+90 16:06 std::move and the Move Assignment Operator in C++
+91 23:19 ARRAY - Making DATA STRUCTURES in C++
+92 45:25 VECTOR/DYNAMIC ARRAY - Making DATA STRUCTURES in C++
+93 17:09 ITERATORS in C++
+94 19:44 Writing an ITERATOR in C++
+95 8:13 How to REALLY learn C++
+96 21:40 Intro to Binary and Bitwise Operators in C++
+97 20:27 Bitwise AND (&), OR (|), XOR (^) and NOT (~) in C++
+98 50:23 I did a C++ University Assignment
+99 26:00 BEST WAY to make Desktop Applications in C++
+100 30:00 Maps in C++ (std::map and std::unordered_map)
+101 18:06 What exactly is NULL?
+102 32:46 How to Properly Setup C++ Projects
+103 19:56 Conversion Operators in C++
+104 15:30 Make C++ Apps & Games FOR THE WEB
+105 17:25 Weak Pointers in C++ (std::weak_ptr)
+106 23:14 Stop using std::vector wrong
+107 16:08 Naming Conventions in C++
+108 13:57 C++ FINALLY Made Logging GOOD!
+109 22:31 C++ FINALLY Improved Error Handling with std::expected!
+110 13:04 HTTP in C++
+111 11:50 Be Careful with References! // Bugs of C++
+112 15:34 HTTP SERVER in C++
+113 17:03 DON'T DELETE THIS! // Bugs of C++
+114 14:03 Reference Counting in C++
+115 12:57 Is This C++ Code Actually Safe?
