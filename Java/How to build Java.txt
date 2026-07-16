@@ -1,0 +1,11 @@
+Step 1. 运行环境
+JDK 包含运行环境java和编译器javac
+
+Step 2. 环境检验
+java -version
+javac -version
+
+Step 3. IDE
+VScode ExtensionPackforJave
+Java: Create Java Project
+
