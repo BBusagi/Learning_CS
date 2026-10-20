@@ -25,3 +25,6 @@ __pycache__/
 Thumbs.db
 .DS_Store
 Algo/Algorithm-Terry-Hank/Local
+
+# ---- DesignPatterns_CSharp 本地 PDF 资料（含子目录） ----
+/DesignPatterns_CSharp/**/*.[pP][dD][fF]

@@ -1,6 +1,12 @@
 # Learning_CS
 
-个人 CS 学习仓库，整理语言基础、数据结构与算法、系统设计、设计模式、Git 和 IPA 考试资料，持续补充学习笔记与练习代码。
+个人 CS 学习仓库，整理语言基础、数据结构与算法、系统设计、设计模式、计算机基础自学、Git 和 IPA 考试资料，持续补充学习笔记与练习代码。
+
+## TODO
+
+- [ ] TODO1：[IPA FE](IPA/FE/TimeLine.txt)
+- [ ] TODO2：[DesignPatterns_CSharp](DesignPatterns_CSharp/)
+- [ ] TODO3：[TeachYourselfCS](TeachYourselfCS/README.md)
 
 ## 目录
 
@@ -11,6 +17,7 @@
 | C# / .NET | C# 基础、数据结构练习、LINQ 与 Web API 笔记 | [CSharp/README.md](CSharp/README.md) |
 | C++ | 语言笔记、Cherno 课程与 Visual Studio 练习工程 | [语言笔记](CPP/Note.md) · [Cherno 学习顺序](CPP/CPP-by-The-Cherno.md) |
 | C# 设计模式 | 简单工厂、策略模式与两者结合的示例 | [示例目录](DesignPatterns_CSharp/) · [解决方案](DesignPatterns_CSharp/DesignPatterns_CSharp.sln) |
+| TeachYourselfCS | 计算机基础自学路线、Crafting Interpreters 与 Coding Adventure 笔记 | [自学目录](TeachYourselfCS/README.md) |
 | Java | 环境搭建与入门练习 | [构建笔记](Java/How%20to%20build%20Java.txt) · [示例代码](Java/MyFirstJava/MyFirstJava/src/App.java) |
 | Git | Git 学习笔记、常用命令与 Linux 命令记录 | [Git 学习目录](Git/README.md) |
 | IPA | 基本情報技術者試験（FE）学习进度与科目 A 资料 | [学习进度](IPA/FE/TimeLine.txt) · [科目 A 资料](IPA/FE/試験A.png) |
@@ -20,6 +27,7 @@
 - 算法课程：[Basic](Algo/Basic/README.md)、[Terry & Hank](Algo/Algorithm-Terry-Hank/README.md)、[Labuladong](Algo/_Labuladong/README.md)、[Lighthouse](Algo/Lighthouse/README.md)。
 - 刷题记录：[LeeCode Log](Algo/LeeCode-Log.md)，包含合并后的旧记录。
 - 系统设计：[Terry & Bohr 学习目录](Algo/SystemDesign-Terry-Bohr/README.md)。
+- 计算机基础：[自学路线与笔记](TeachYourselfCS/README.md)。
 - Python 速查：[Python 常用语法](Python/常用语法.md)、[Python / C# 语义对照](Algo/不同语言的语义映射表.md)。
 
 ## 内容分类
