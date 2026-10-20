@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | Algo | 数据结构、算法刷题、Terry & Hank 课程、Labuladong 与系统设计笔记 | [算法学习目录](Algo/README.md) |
 | Python | Python 基础课程、自学练习与常用语法笔记 | [Python 学习目录](Python/README.md) |
-| C# / Unity | C#、LINQ、UniRx、UniTask 等笔记 | [CSharp/README.md](CSharp/README.md) |
+| C# / .NET | C# 基础、数据结构练习、LINQ 与 Web API 笔记 | [CSharp/README.md](CSharp/README.md) |
 | C++ | 语言笔记、Cherno 课程与 Visual Studio 练习工程 | [语言笔记](CPP/Note.md) · [Cherno 学习顺序](CPP/CPP-by-The-Cherno.md) |
 | C# 设计模式 | 简单工厂、策略模式与两者结合的示例 | [示例目录](DesignPatterns_CSharp/) · [解决方案](DesignPatterns_CSharp/DesignPatterns_CSharp.sln) |
 | Java | 环境搭建与入门练习 | [构建笔记](Java/How%20to%20build%20Java.txt) · [示例代码](Java/MyFirstJava/MyFirstJava/src/App.java) |
@@ -21,6 +21,10 @@
 - 刷题记录：[LeeCode Log](Algo/LeeCode-Log.md)，包含合并后的旧记录。
 - 系统设计：[Terry & Bohr 学习目录](Algo/SystemDesign-Terry-Bohr/README.md)。
 - Python 速查：[Python 常用语法](Python/常用语法.md)、[Python / C# 语义对照](Algo/不同语言的语义映射表.md)。
+
+## 相关仓库
+
+- [Unity_Learning](https://github.com/BBusagi/Unity_Learning)：Unity 项目实践，以及迁入的 UniRx、UniTask 学习专题。
 
 ## 仓库说明
 
