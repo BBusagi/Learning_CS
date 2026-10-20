@@ -14,6 +14,6 @@ All files for algorithmic exercises and system design notes.
 
 - [System Design - Terry&Bohr](SystemDesign-Terry-Bohr/README.md)：系统设计学习顺序与笔记。
 - [IPA 基本情報技術者試験](../IPA/FE/TimeLine.txt)：学习进度与[科目 A 资料](../IPA/FE/試験A.png)。
-- [Python 常用语法](python常用语法.md)：算法题常用 Python 语法速查。
-- [不同语言的语义映射表](不同语言的语义映射表.md)：跨语言解题语义与数据结构映射。
+- [Python 常用语法](../Python/常用语法.md)：算法题常用 Python 语法、API 与易错点。
+- [Python / C# 语义对照](不同语言的语义映射表.md)：按需求比较两种语言的写法与数据结构。
 - [LeeCode Log](LeeCode-Log.md)：LeetCode 记录（含合并进来的旧记录）。
