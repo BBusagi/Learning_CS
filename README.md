@@ -22,9 +22,16 @@
 - 系统设计：[Terry & Bohr 学习目录](Algo/SystemDesign-Terry-Bohr/README.md)。
 - Python 速查：[Python 常用语法](Python/常用语法.md)、[Python / C# 语义对照](Algo/不同语言的语义映射表.md)。
 
+## 内容分类
+
+- 语言基础、LINQ、.NET、算法、系统设计与通用设计模式集中在本仓库。
+- Unity 引擎、插件使用和项目实践集中在 `Unity_Learning`，UniRx、UniTask 已按专题迁入该仓库。
+- 笔记通过 Markdown 阅读；各语言练习工程独立组织，可按对应目录选择需要的示例。
+
 ## 相关仓库
 
-- [Unity_Learning](https://github.com/BBusagi/Unity_Learning)：Unity 项目实践，以及迁入的 UniRx、UniTask 学习专题。
+- [Unity_Learning](https://github.com/BBusagi/Unity_Learning)：Unity 引擎与项目实践。
+- [Unity 学习专题](https://github.com/BBusagi/Unity_Learning/tree/main/Topics)：UniRx、UniTask 的笔记、脚本和配套示例。
 
 ## 仓库说明
 
